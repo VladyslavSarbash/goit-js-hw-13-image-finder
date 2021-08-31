@@ -15,6 +15,9 @@ refs.button.style.visibility = 'hidden';
 
 function createMarkupBySearchResult(e) {
   e.preventDefault();
+  refs.gallery.innerHTML = '';
+  refs.button.style.visibility = 'hidden';
+
   inputValue = e.target.query.value;
 
   pageNumber = 1;
